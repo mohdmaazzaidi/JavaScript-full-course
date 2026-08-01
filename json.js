@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JSON</title>
-</head>
-
-<body>
-    <script>
         // let userData = {
         //     name: "Mohd Maaz",
         //     age: 21,
@@ -51,11 +41,3 @@
         // localStorage.clear();
 
         console.log(updateValues);
-        
-
-
-
-    </script>
-</body>
-
-</html>

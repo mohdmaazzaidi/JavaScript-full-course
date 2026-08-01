@@ -1,19 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practice Excercise</title>
-</head>
-
-<body>
-    <h1 id="name"></h1>
-    <p id="yourCart"></p>
-
-    <h3 class="message"></h3>
-
-    <script>
         // const myName = 'Maaz';
         // console.log(myName);
         // document.querySelector('#name').innerText = myName;
@@ -62,10 +47,3 @@
         let num = String(score);
         console.log(typeof num);
         console.log(num);
-
-
-
-    </script>
-</body>
-
-</html>
