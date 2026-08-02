@@ -63,13 +63,15 @@ let printMsg = function (a){
     return b;
 }
 
-console.log(typeof arr);
-console.log(typeof obj);
-console.log(typeof printMsg);
-console.log(printMsg(0));
-console.log(typeof NaN);
+// console.log(typeof arr);
+// console.log(typeof obj);
+// console.log(typeof printMsg);
+// console.log(printMsg(0));
+// console.log(typeof NaN);
 
-
+if(""){
+   console.log("Hello! Maaz");
+}
 
 
 
