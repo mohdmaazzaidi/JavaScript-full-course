@@ -21,7 +21,7 @@
 let a = "2"+(1+5);
 // console.log(a);
 
-let b = 3 + 6 + "23";
+// let b = 3 + 6 + "23";
 // console.log(b);
 
 
@@ -47,20 +47,28 @@ let id = Symbol(123);
 
 // Non-Premitive data types are (Arrar,function,objects)
 
-let arr = [1,2,3,3,4.4]
+let arr = [1,2,3,3,4.4];
 
 let obj = {
     Name: 'Maaz',
     age: 23,
 };
 
-let printMsg = function (){
+let printMsg = function (a){
+    if(a == 0){
+        var b = 10;
+    }
     console.log("Hello world");
+    console.log(b);
+    return b;
 }
 
 console.log(typeof arr);
 console.log(typeof obj);
 console.log(typeof printMsg);
+console.log(printMsg(0));
+console.log(typeof NaN);
+
 
 
 
