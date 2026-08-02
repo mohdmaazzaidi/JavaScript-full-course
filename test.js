@@ -18,7 +18,7 @@
 // console.log(typeof ab); 
 // console.log(ab);
 
-let a = "2"+(1+5);
+// let a = "2"+(1+5);
 // console.log(a);
 
 // let b = 3 + 6 + "23";
@@ -72,6 +72,15 @@ let printMsg = function (a){
 if(""){
    console.log("Hello! Maaz");
 }
+
+let a;
+console.log(a);  // Undefine 
+
+let b = null;
+console.log(b);  // null
+
+let c = 'Name' * 3;
+console.log(c);  //NaN
 
 
 
