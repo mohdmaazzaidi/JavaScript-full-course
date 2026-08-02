@@ -83,4 +83,10 @@ let c = 'Name' * 3;
 console.log(c);  //NaN
 
 
+let ab = '5'+ 1;
+console.log(ab);  //51
+
+let cd = '5'- 1;
+console.log(cd);  //4
+
 
