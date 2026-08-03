@@ -37,6 +37,7 @@
 
 
 // Assignment operator -------------------------------
+// =,+=, -=, *=, /=, %=
 
 // let a = 10;
 // console.log(a); // 10
@@ -55,6 +56,33 @@
 
 // a%=5;
 // console.log(a); //3
+
+
+// Logical operator ------------------------
+// && (AND) use this when you require all condition should be true,
+// ||(OR) use this when you require at least one condition should be true. 
+
+// let a = 10;
+// let b = 20;
+// let c = 30;
+
+// if(a>b && b<c){    // (10>20(false)&&20<30(True)) ---> //False
+//     console.log("Hello"); // This statement Will not print
+// }
+
+// if(a<b && b<c){    // (10>20(True)&&20<30(True)) ---> //True
+//     console.log("Hello!"); // This statement Will print
+// }
+
+// if(a>b || b<c){    // (10>20(false)&&20<30(True)) ---> //True
+//     console.log("Hello! OR operator"); // This statement Will print
+// }
+
+// if(a>b || b>c){    // (10>20(false)&&20>30(false)) ---> //false
+//     console.log("Hello! OR operator"); // This statement Will not print
+// }
+
+
 
 
 
