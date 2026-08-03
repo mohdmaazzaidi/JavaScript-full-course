@@ -95,6 +95,24 @@
 // console.log(-b); // -5
 // console.log(typeof b); // String
 
+
+// let a = 4;
+// let b = a++;
+// console.log(a, b); // 5, 4
+
+// let a = 4;
+// let b = ++a;
+// console.log(a, b); // 5, 5
+
+// let like = 100;
+
+// function printLike(){
+//     return ++like;
+// }
+// console.log(printLike());  // 101
+// console.log(like);   //101
+
+
 // Post-increment --------------
 // let ab = 5;
 // console.log(ab++); //5
@@ -137,9 +155,62 @@
 // let y = ( x++, x+1, x*2); // (x=10+1)=11,(11+1)=12,(11*2)=22 Last calculated value will be print
 // console.log(y); // 22
 
-let x = 10;
-let y = (x++, x+1, x*2, ++x); // Last value will be calculated
-console.log(y); // 12
+// let x = 10;
+// let y = (x++, x+1, x*2, ++x); // Last value will be calculated
+// console.log(y); // 12
+
+
+// Ternary operators ----------------
+// ?: (we can use it as if else short hand method)
+
+// let a = 20;
+// let b = 23;
+// Syntax ---> condition ? True case : false case 
+// a>b? console.log("Hello") : console.log("Bey!");  //
+
+// let score = 98;
+// let grade = score>=90 ? "A" : score>=80 ? "B" : score>=70 ? "C" : score>=50 ? "Pass" : "Fail";
+// console.log(grade);
+
+// let point = 80;
+// let level = point>=100 ? "Gold" : point>=50 ? "Silver" : "Bronze";
+// console.log(level);
+
+// let isLogIn = true;
+// let hasToken = false;
+// let access = isLogIn && hasToken ? "Access grant" : "Access deny"
+// console.log(access);
+
+
+// Instanceof is use to check the non-primitive variable --------------------------------
+
+//Ex ---> 1
+// let a = [1,3,34,43];  // This is how we initalize array in JS
+// console.log(typeof a); // It will print object but in actual it is array
+// console.log(a instanceof Array); // It will print true becasue a is initialize as an array.
+
+//EX ---> 2
+// let b = {
+//     name: "Sam",
+//     age: 23,
+// };   // This is how we initalize Object in JS
+
+// console.log(typeof b);  // It will print object but in actual it is also object
+// console.log(b instanceof Object); // It will print true becasue b is initialize as an Object.
+
+//EX ---> 3
+
+// printMsg();
+// console.log(typeof printMsg);
+// console.log(printMsg instanceof Function);
+
+
+// function printMsg(){
+//     console.log("Hey! Sam");
+// }
+
+
+
 
 
 
