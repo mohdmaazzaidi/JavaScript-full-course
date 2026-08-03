@@ -83,10 +83,63 @@
 // }
 
 
+// unary operators in JS ------------------------------------
+// That work on a single operand (one value or variable)
+// +, -, ++, --, !, typeof
+
+// let a = "5";
+// console.log(+a); // 5
+// console.log(typeof a); // Number
+
+// let b = "5";
+// console.log(-b); // -5
+// console.log(typeof b); // String
+
+// Post-increment --------------
+// let ab = 5;
+// console.log(ab++); //5
+// console.log(ab++); //6
+// console.log(ab++); //7
+// console.log(ab); //8
+
+// Pre-increment ----------------
+// let ab = 5;
+// console.log(++ab); //6
+// console.log(++ab); //7
+// console.log(++ab); //8
+// console.log(ab); //8
 
 
+// Post-decrement --------------
+// let ab = 5;
+// console.log(ab--); //5
+// console.log(ab--); //4
+// console.log(ab--); //3
+// console.log(ab); //2
 
+// Pre-decrement ----------------
+// let ab = 5;
+// console.log(--ab); //4
+// console.log(--ab); //3
+// console.log(--ab); //2
+// console.log(ab); //2
 
+// EX -- mix of per and post  ------------
+// let ab = 5;
+// console.log(ab++); // 5 
+// console.log(++ab); // 7
+// console.log(ab--); // 7
+// console.log(--ab); // 5
+// console.log(ab); // 5
+
+// Interview questions ---------------
+// let x = 10;
+// let y = ( x++, x+1, x*2); // (x=10+1)=11,(11+1)=12,(11*2)=22 Last calculated value will be print
+// console.log(y); // 22
+
+let x = 10;
+let y = (x++, x+1, x*2, ++x); // Last value will be calculated
+console.log(y); // 12
 
 
 
