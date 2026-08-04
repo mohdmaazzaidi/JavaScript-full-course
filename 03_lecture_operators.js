@@ -204,7 +204,6 @@
 // console.log(typeof printMsg);
 // console.log(printMsg instanceof Function);
 
-
 // function printMsg(){
 //     console.log("Hey! Sam");
 // }
