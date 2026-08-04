@@ -142,3 +142,76 @@
 //         sum += i;
 // }
 // console.log(sum);
+
+
+// Find the Sum of Digits
+
+// let num = 4567;
+// let sum = 0;
+// while(num>0){
+//     let digit = num%10;
+//     sum = sum + digit;
+//     num = Math.floor(num/10);
+// }
+// console.log(sum);
+
+
+// Reverse a Number
+// let num = 344543;
+// let newnum = 0;
+
+// while(num>0){
+//     let digit = num%10;
+//     newnum = newnum*10 + digit;
+//     num = Math.floor(num/10);
+// }
+// console.log(newnum);
+
+// Check Palindrome Number
+// let num = 2002;
+// let originalNum = num;
+// let newNum = 0;
+// while(num>0){
+//     let digit = num%10;
+//     newNum = newNum * 10 + digit;
+//     num = Math.floor(num/10);
+// }
+// console.log(newNum);
+
+// if(originalNum == newNum){
+//     console.log("Palandrome");
+// } else {
+//     console.log("Not Palandrome");
+// }
+
+// Find the Largest Digit in a Number
+// let n = 23439384;
+// let largestDigit = 0;
+
+// while(n>0){
+//     let digit = n%10;
+//     if(digit>largestDigit){
+//         largestDigit = digit;
+//     }
+//     n = Math.floor(n/10);
+// }
+
+// console.log(largestDigit);
+
+//Count Even and Odd Digits in a number
+
+let n = 23456743223;
+let evenCount = 0;
+let oddCount = 0;
+while(n>0){
+    let digit = n % 10;
+    if(digit %2 == 0){
+        evenCount++
+    } else {
+        oddCount++
+    }
+    n = Math.floor(n/10);
+}
+
+console.log(evenCount);
+console.log(oddCount);
