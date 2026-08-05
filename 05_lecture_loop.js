@@ -198,20 +198,221 @@
 
 // console.log(largestDigit);
 
+
 //Count Even and Odd Digits in a number
 
-let n = 23456743223;
-let evenCount = 0;
-let oddCount = 0;
-while(n>0){
-    let digit = n % 10;
-    if(digit %2 == 0){
-        evenCount++
-    } else {
-        oddCount++
-    }
-    n = Math.floor(n/10);
-}
+// let n = 23456743223;
+// let evenCount = 0;
+// let oddCount = 0;
+// while(n>0){
+//     let digit = n % 10;
+//     if(digit %2 == 0){
+//         evenCount++
+//     } else {
+//         oddCount++
+//     }
+//     n = Math.floor(n/10);
+// }
 
-console.log(evenCount);
-console.log(oddCount);
+// console.log(evenCount);
+// console.log(oddCount);
+
+
+// Find the GCD (HCF) of Two Numbers
+// let a = 12;
+// let b = 18;
+
+// let gcd = 1;
+// let smaller;
+// if (a < b) {
+//     smaller = a;
+// } else {
+//     smaller = b;
+// }
+
+// for (let i = 1; i <= smaller; i++) {
+//     if ((a % i === 0) && (b % i === 0)) {
+//         gcd = i;
+//     }
+// }
+
+// console.log(gcd);
+
+
+// Find the LCM of Two Numbers
+// let a = 133;
+// let b = 181;
+// let largNum;
+// if(a<b){
+//     largNum = b;
+// } else {
+//     largNum = a;
+// }
+
+// let lcm = largNum;
+// while(true){
+//     if(lcm%a === 0 && lcm%b ===0){
+//         break;
+//     }
+//     lcm++
+// }
+
+// console.log(lcm);
+
+// Find GCD of 34 and 42
+// let a = 34;
+// let b = 42;
+// let gcd = 1;
+// let smaller;
+// if(a<b){
+//     smaller=a;
+// } else{
+//     smaller = b;
+// }
+
+// for(let i = 1; i<=smaller; i++){
+//     if(a%i == 0 && b%i == 0){
+//         gcd = i;
+//     }
+// }
+
+// console.log(gcd);
+
+
+// Check if a Number is Prime
+// let num = 5;
+// let isPrime = true;
+// for(let i = 2; i*i<num; i++){
+//     if(num%i == 0){
+//         isPrime = false;
+//         break;
+//     }
+// }
+
+// if(isPrime === true){
+//     console.log("Prime Number");
+// } else{
+//     console.log("Not a Prime Number");
+// }
+
+
+// LCM of two numbers?
+// let a = 34;
+// let b = 23;
+// let largestDigit;
+// if (a < b) {
+//     largestDigit = b;
+// } else {
+//     largestDigit = a;
+// }
+
+// let lcm = largestDigit;
+// while(true){
+//     if(lcm%a === 0 && lcm%b === 0){
+//         break;
+//     }
+//     lcm++;
+// }
+// console.log(lcm);
+
+
+// GCD of of 8 and 20 ?
+// let a = 8;
+// let b = 20;
+// let smaller;
+// if(a<b){
+//     smaller = a;
+// } else {
+//     smaller = b;
+// }
+
+// let gcd =  1;
+
+// for(let i = 1; i<= smaller; i++){
+//     if(a%i === 0 && b%i ===0 ){
+//         gcd = i;
+//     }
+// }
+// console.log(gcd);
+
+
+// LCM of two numbers 8 and 20 ?
+// let a = 8;
+// let b = 20;
+
+// let largestDigit;
+// if(a<b){
+//     largestDigit = b;
+// } else{
+//     largestDigit = a;
+// }
+
+// let lcm = largestDigit;
+
+// while(true){
+//     if(lcm%a ===0 && lcm%b === 0){
+//         break;
+//     }
+//     lcm++;
+// }
+// console.log(lcm);
+
+
+// HCF(GCD) of 15 and 35 = 5
+// let a = 15;
+// let b = 35;
+// let smaller;
+// if(a<b){
+//     smaller = a;
+// } else{
+//     smaller = b;
+// }
+
+// let gcd = 1;
+
+// for(let i = 1; i<= smaller; i++){
+//     if(a%i === 0 && b%i === 0){
+//         gcd = i;
+//     }
+// }
+// console.log(gcd);
+
+// LCM of 15 and 35 
+
+// let a = 15;
+// let b = 35;
+// let largestDigit;
+// if(a<b){
+//     largestDigit = a;
+// } else{
+//     largestDigit = b;
+// }
+
+// let lcm = largestDigit;
+// while(true){
+//     if(lcm%a === 0 && lcm%b === 0){
+//         break;
+//     }
+//     lcm++;
+// }
+// console.log(lcm);
+
+// Print All Prime Numbers from 1 to N
+// let n = 34;
+// if(n>=2){
+//     for(let i = 1; i<=n; i++){
+//         let isprime = true;
+//         for(let j = 2; j<i; j++){
+//             if(i%j === 0){
+//                 isprime = false;
+//                 break;
+//             }
+//         }
+//         if(isprime == true){
+//             console.log(i);
+//         }
+//     }
+// }else{
+//     console.log("Invalid input");
+
+// }
