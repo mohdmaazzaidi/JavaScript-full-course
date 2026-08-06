@@ -49,7 +49,7 @@
 // let val = abc();
 // console.log(val);
 
-// First calls function (Assign to variables, Pass as argument, retun from other function). -------------------------------------
+// First class function (Assign to variables, Pass as argument, retun from other function). -------------------------------------
 //Assign function to variables:-
 // let val = function(){
 //     console.log("Print Hello!");
@@ -127,5 +127,91 @@
 // console.log(a); // 6 (updated from inside the function).
 
 
-// Closures in JS
-// A function that returns 
+// Closures and lexical scoping JS -------------------------------
+// A parent function that returns another function but use parent function variable is called closures in js:-
+
+// function abc(){
+//     let a = 10;
+//     console.log(a);
+//     return function(){
+//         a = a + 2;
+//         console.log(a);
+//     }
+// }
+
+// // abc()();   // we can write ()() with function name to call both function at a time.
+
+// let ab = abc();  // To call only parent function.
+// ab();  // To call return function.
+
+
+// lexical scoping:-
+// We can use the parent function variables in the its chid functions this called as lexical scoping.
+
+// function abc(){
+//     let a = 10;
+
+//     function def(){
+//         let b = 20;
+//         ghi();
+//         function ghi(){
+//             let c = 30;
+//             let sum = a + c;
+//             console.log(sum); // this will print 40. note:- we can use the parent function variables inside the child function. 
+//         }
+//     }
+//     def();
+//     let prod = a * c; // this will give error because we can not use child function variable in side parent funtion this is called lexical scoping.
+// }
+
+// abc();
+
+
+
+// IIFE (immediately invoked function expression) -------------------------------------
+// It is a function that call immediately itself are called IIFE.
+// (function(){
+//     console.log("Hello");
+// })();
+
+// Hoisting of a function ------------------
+// function declaration/statement can be host but function expression can not be host.
+// abc();     // It will print hello
+
+// function abc(){
+//     console.log("hello");
+// }
+
+// function experssion can not be hoist ------------------
+
+// abc(); // It will give error -- cannot access 'abc' before initialization
+
+// let abc = function (){
+//     console.log("Hello");
+// }
+
+// Q1. Create a arrow function.
+// let abc = (a,b) => {
+//    console.log("Hello");
+// }
+
+//Q2. User rest perameter to accept any number of the score and return total score.
+
+// function abc(...score){
+//     let toatScore = 0;
+//     for(let i = 0; i<score.length; i++){
+//         toatScore += score[i];
+//     }
+//     return toatScore;
+// }
+
+// let sum = abc(12,23,34,55,23)
+// console.log(sum);
+
+//Q3. Create a IIFE function
+
+// (function(){
+//     console.log("hey!");
+    
+// })();
+
