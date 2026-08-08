@@ -58,10 +58,45 @@
 
 
 //forEach method:-
-let arr = [44,45,84,36,21]
-arr.forEach(element => {
-    console.log(element);
-});
+// let arr = [44,45,84,36,21]
+// arr.forEach(function(val){
+//     console.log(val);
+// })
+
+
+// Map Method:- (It is use to create a new array using existing array)
+// let arr = [44,45,84,36,21]
+// let newArr = arr.map(function(val){
+//     if (val>40) return 12;
+//     else return 10;
+// })
+
+// console.log(newArr);
+
+
+// filter Method:- 
+// let arr = [44,45,84,66,21];
+// let newArr = arr.filter(function(val){
+//     if(val>50) return true;
+// })
+// console.log(newArr);
+
+
+// Reduce Method:-
+// let arr = [44,45,84,66,21];
+// let newArr = arr.reduce(function(accum,val){
+//     return accum + val;
+// },0)
+// console.log(newArr);
+
+
+// Find method:-
+// let arr = [44,45,84,66,21];
+// let newArr = arr.findIndex(function(val){
+//     if (val === 66)
+//     return val;
+// })
+// console.log(newArr);
 
 
 
