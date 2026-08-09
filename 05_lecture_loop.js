@@ -60,7 +60,7 @@
 
 // 4. print all the odd number from 1 to 20.
 // for (let index = 1; index <= 20; index++) {
-//     if(index%2 !== 0){
+//     if(index%2 == 1){
 //         console.log(index);
 //     }
 // }
@@ -183,6 +183,8 @@
 // } else {
 //     console.log("Not Palandrome");
 // }
+
+
 
 // Find the Largest Digit in a Number
 // let n = 23439384;
