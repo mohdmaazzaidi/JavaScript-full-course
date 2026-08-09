@@ -72,39 +72,35 @@
 
 // function abc(){
 //     console.log("Hey!");
-//     return egf();
+//     return function(){
+//         console.log("bye!");
+//     };
 // }
 
-// let anotherFun = abc();
-// console.log(anotherFun);
-
-
-// function egf(){
-//     console.log("I am return function");
-//     return 56;
-// }
+// let newFn = abc();
+// newFn();
 
 
 // HOF (higher order function) is a function that a take a function as a parameter or return a fuction; ---------------------------------------------------
 
 // This function is taking function parameter:-
-// function abc(val){
+// let abc = (val)=>{
 //     val();
 // }
-
 // abc(function(){
-//     console.log("hello");
+//     console.log("Hello");
 // });
 
+
 // This function returning a function:-
-// function abc(){
-//     return function vbn(){
-//         console.log("Hello!");
+// let abc = ()=>{
+//     return function (){
+//         console.log("hello");
+//         return 12;
 //     }
 // }
 
-// let a = abc();
-// a();
+// console.log(abc()());
 
 
 // Pure and imPure function ---------------------------------
@@ -150,22 +146,21 @@
 
 // function abc(){
 //     let a = 10;
-
 //     function def(){
 //         let b = 20;
-//         ghi();
 //         function ghi(){
 //             let c = 30;
 //             let sum = a + c;
 //             console.log(sum); // this will print 40. note:- we can use the parent function variables inside the child function. 
 //         }
+//         ghi();
 //     }
 //     def();
-//     let prod = a * c; // this will give error because we can not use child function variable in side parent funtion this is called lexical scoping.
 // }
 
 // abc();
 
+//     let prod = a * c; // this will give error because we can not use child function variable in side parent funtion this is called lexical scoping.
 
 
 // IIFE (immediately invoked function expression) -------------------------------------
@@ -173,6 +168,7 @@
 // (function(){
 //     console.log("Hello");
 // })();
+
 
 // Hoisting of a function ------------------
 // function declaration/statement can be host but function expression can not be host.
@@ -198,15 +194,13 @@
 //Q2. User rest perameter to accept any number of the score and return total score.
 
 // function abc(...score){
-//     let toatScore = 0;
-//     for(let i = 0; i<score.length; i++){
-//         toatScore += score[i];
-//     }
-//     return toatScore;
+//     let total = 0;
+//     score.forEach(function(val){
+//         total += val;
+//     })
+//     return total;
 // }
-
-// let sum = abc(12,23,34,55,23)
-// console.log(sum);
+// console.log(abc(12,2,3,5,2));
 
 //Q3. Create a IIFE function
 
@@ -214,4 +208,25 @@
 //     console.log("hey!");
     
 // })();
+
+// Q4. 
+// function adult(age){
+//     return (age>18)? "Adult" : "Not Adult";
+// }
+
+// console.log(adult(4));
+
+//Q5. Discount Calculator.
+// function cal(discount, price){
+//     return function (){
+//         let totalDis = (price * discount)/100;
+//         let finalPr = price - totalDis;
+//         return finalPr;
+//     }
+// }
+// let pay = cal(20,300);
+// console.log(pay());
+
+
+
 
