@@ -1,1 +1,0 @@
-let abc = document.getElementById("first");
