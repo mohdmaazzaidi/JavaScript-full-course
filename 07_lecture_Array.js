@@ -255,9 +255,9 @@
 // console.log(newArr);
 
 //Q18. clone this Array properly (not by references):
-let arr = [1,2,23,3];
-let arr2 = [...arr]
-console.log(arr2);
+// let arr = [1,2,23,3];
+// let arr2 = [...arr]
+// console.log(arr2);
 
 
 
