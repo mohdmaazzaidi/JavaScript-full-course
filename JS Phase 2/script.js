@@ -1,8 +1,8 @@
-let p = document.querySelectorAll("p");
+let p = document.querySelectorAll("p");   // To select HTML
 p.forEach(function(val){
-    val.style.fontSize = "22px"
+    val.style.fontSize = "22px"         // To apply style
     let isRed = false;
-    val.addEventListener("click",function(){
+    val.addEventListener("click",function(){          // To add event
         if(isRed === false){
             val.style.color = "red";
             isRed = true;
@@ -22,7 +22,7 @@ let div = document.querySelector("div");
 div.addEventListener("dblclick",function(){
     div.style.color = "orange"
     let content = div.innerText = "Hello this my first JS event class";
-    div.innerHTML = `<h1>${content}</h1>`
+    div.innerHTML = `<h1>${content}</h1>`    // To update HTML
 })
 
 let inputBtn = document.querySelector("input");
