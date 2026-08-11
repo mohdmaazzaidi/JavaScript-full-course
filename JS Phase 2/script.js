@@ -25,6 +25,9 @@ div.addEventListener("dblclick",function(){
     div.innerHTML = `<h1>${content}</h1>`    // To update HTML
 })
 
+
+
+
 let inputBtn = document.querySelector("input");
 inputBtn.addEventListener("input",function(dtls){
     if(dtls.data !== null && dtls.data !== " "){
