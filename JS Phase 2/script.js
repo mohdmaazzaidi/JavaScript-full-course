@@ -1,16 +1,23 @@
-let p = document.querySelectorAll("p");   // To select HTML
+let p = document.querySelectorAll("p");
 p.forEach(function(val){
-    val.style.fontSize = "22px"         // To apply style
-    let isRed = false;
-    val.addEventListener("click",function(){          // To add event
-        if(isRed === false){
-            val.style.color = "red";
-            isRed = true;
+    val.classList.add("abc");
+    let isBlue = true;
+    val.addEventListener("click",function(){
+        if(isBlue === true){
+            val.style.color = "Red";
+            isBlue = false;
         } else {
-            val.style.color = "green";
-            isRed = false;
+            val.style.color = "blueviolet";
+            isBlue = true;
         }
     })
+})
+
+let div = document.querySelector("div");
+div.addEventListener("dblclick", function(){
+    let newMsg = div.textContent;
+    div.innerHTML = `<h1>${newMsg}</h1>`
+    div.style.color = "Orange"
 })
 
 let h1 = document.querySelectorAll("h1");
@@ -18,20 +25,9 @@ h1.forEach(function(val){
     val.remove();
 })
 
-let div = document.querySelector("div");
-div.addEventListener("dblclick",function(){
-    div.style.color = "orange"
-    let content = div.innerText = "Hello this my first JS event class";
-    div.innerHTML = `<h1>${content}</h1>`    // To update HTML
-})
-
-
-
-
-let inputBtn = document.querySelector("input");
-inputBtn.addEventListener("input",function(dtls){
-    if(dtls.data !== null && dtls.data !== " "){
-        console.log(dtls.data);
-    }
-})
+let newEle = document.createElement("input");
+newEle.setAttribute("placeholder","Enter you name here");
+newEle.setAttribute("type","text");
+newEle.style.display = "block";
+document.querySelector("p").prepend(newEle)
 
