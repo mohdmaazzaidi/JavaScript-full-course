@@ -59,4 +59,3 @@ document.body.append(newH3)
 select.addEventListener("change",function(val){
     newH3.textContent = `You hava selected ${val.target.value} device`
 })
-
