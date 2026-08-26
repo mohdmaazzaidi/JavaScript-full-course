@@ -52,8 +52,11 @@ form.addEventListener("submit", function (val) {
     p.textContent = val.target[3].value;
     div.appendChild(p);
 
-    main.appendChild(div)
-
+    main.appendChild(div);
+    
+    inputs.forEach(function(val){
+        val.value = "";
+    })
 
     // console.log(div);
 
