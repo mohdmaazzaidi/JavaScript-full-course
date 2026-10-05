@@ -274,11 +274,11 @@
 
 //Use a variable to dynamically assign a property.
 
-const position = "role";
-let obj = {
-    name: "Maaz",
-    [position]: "Software engineer"
-}
-console.log(obj.role);
+// const position = "role";
+// let obj = {
+//     name: "Maaz",
+//     [position]: "Software engineer"
+// }
+// console.log(obj.role);
 
 
